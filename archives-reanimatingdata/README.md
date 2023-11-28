@@ -1,12 +1,20 @@
 # Archives-reanimatingdata
 URL: <archives.reanimatingdata.co.uk>,
+
 Server: Apache2,
+
 Framework: Omeka_s,
+
 Database: MariaDB,
+
 Database name: `omeka_s`,
+
 Files being served: `/srv/http/omeka_s/`,
+
 Custom modules: `FaysModule`,
+
 Backups are on lab workstation: `swebb@139.184.232.151:/home/data/sharonwebb/archives_reanimatingdata/`,
+
 
 Reinstall backups by:
 
