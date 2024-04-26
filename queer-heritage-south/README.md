@@ -4,6 +4,7 @@
 - Framework: Omeka_s,
 - Database: MariaDB,
 - Database name: `omeka_s`,
+- Database password: stored in `/root/.my.cnf` on the image
 - Files being served: `/mnt/qhs_extra/`,
 - Custom modules: `QhsModule`, #TODO: work out if there are other custom modules
 - Backups are on lab workstation: `swebb@139.184.232.151:/home/data/sharonwebb/queer-heritage-south/`,

@@ -9,6 +9,8 @@ Database: MariaDB,
 
 Database name: `omeka_s`,
 
+Database password: stored in `/root/.my.cnf` on the image
+
 Files being served: `/srv/http/omeka_s/`,
 
 Custom modules: `FaysModule`,
