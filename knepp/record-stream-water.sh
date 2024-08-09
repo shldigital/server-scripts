@@ -2,12 +2,12 @@
 
 URL=http://locus.creacast.com:9001/knepp_water.mp3
 
-DIR=/mnt/knepp_extra/
+DIR=/home/u294757808/domains/peru-echidna-597998.hostingersite.com/public_html/knepp
 REC=recordings/water
 
 cd $DIR
 
-./stop-water.sh
+$DIR/stop-water.sh
 
 FORMAT=%H-%d-%m-%Y
 
@@ -15,12 +15,12 @@ YEAR=`date +'%Y'`
 MONTH=`date +'%m'`
 DAY=`date +'%d'`
 
-mkdir -p $REC/$YEAR/$MONTH/$DAY
+mkdir -p $DIR/$REC/$YEAR/$MONTH/$DAY
 
-nohup wget -q $URL -O $REC/$YEAR/$MONTH/$DAY/knepp-`date +"$FORMAT"`.mp3 & 
+nohup wget -q $URL -O $DIR/$REC/$YEAR/$MONTH/$DAY/knepp-`date +"$FORMAT"`.mp3 & 
 
 PID=$!
 
-echo "kill $!" > stop-water.sh
+echo "kill $!" > $DIR/stop-water.sh
 
-chmod +x stop-water.sh
+chmod +x $DIR/stop-water.sh

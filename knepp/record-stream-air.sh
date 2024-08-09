@@ -2,12 +2,12 @@
 
 URL=http://locus.creacast.com:9001/knepp_air.mp3
 
-DIR=/mnt/knepp_extra/
+DIR=/home/u294757808/domains/peru-echidna-597998.hostingersite.com/public_html/knepp
 REC=recordings/air
 
 cd $DIR
 
-./stop-air.sh
+$DIR/stop-air.sh
 
 FORMAT=%H-%d-%m-%Y
 
@@ -15,12 +15,12 @@ YEAR=`date +'%Y'`
 MONTH=`date +'%m'`
 DAY=`date +'%d'`
 
-mkdir -p $REC/$YEAR/$MONTH/$DAY
+mkdir -p $DIR/$REC/$YEAR/$MONTH/$DAY
 
-nohup wget -q $URL -O $REC/$YEAR/$MONTH/$DAY/knepp-`date +"$FORMAT"`.mp3 > air.log & 
+nohup wget -q $URL -O $DIR/$REC/$YEAR/$MONTH/$DAY/knepp-`date +"$FORMAT"`.mp3 > air.log & 
 
 PID=$!
 
-echo "kill $!" > stop-air.sh
+echo "kill $!" > $DIR/stop-air.sh
 
-chmod +x stop-air.sh
+chmod +x $DIR/stop-air.sh
