@@ -1,5 +1,5 @@
 #!/bin/bash
-# deletes month folder air/water from 9 months ago,
+# deletes month folder air/water from 5 months ago,
 # designed to run from cron once a month
 
 function rollback()
@@ -29,10 +29,10 @@ function rollback()
 
 year=$(date +%Y)
 echo This year: $year
-currentmonth=$(date +%m)
+currentmonth=$(date +%-m)
 echo This month: $currentmonth
 
-datefolder=$(rollback 9 $currentmonth $year)
+datefolder=$(rollback 5 $currentmonth $year)
 if [[ -z "$datefolder" ]]; then
         echo Invalid date folder \(empty string\), exiting with error
         exit 1
