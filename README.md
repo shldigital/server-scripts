@@ -1,3 +1,3 @@
-A repo for handy scripts and code being used on the SDHL servers.
+A repo for handy scripts and code being used on the SHL Digital servers.
 
-Check the [Wiki](https://gitlab.com/shl-digital-servers/scripts/-/wikis/home) for more info.
+Check the READMEs in each individual folder for more info.
