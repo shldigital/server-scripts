@@ -2,4 +2,4 @@
 Description=Use with timer to back up audio files with rclone
 
 [Service]
-ExecStart=/home/data/alicee/knepp_extra/gdrive-backup.sh
+ExecStart=/home/data/alicee/knepp_extra/cloud-backup.sh

@@ -1,5 +1,5 @@
 [Unit]
-Description=Daily gdrive backup
+Description=Daily cloud backup
 
 [Timer]
 OnCalendar=*-*-* 04:00:00
