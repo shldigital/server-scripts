@@ -8,7 +8,7 @@ An additional backup script copies all files nightly over to whichever rclone re
 The crontab configuration for the project could be something like:
 
 ```
-1 * * * * /mnt/knepp_extra/record-stream-air.sh
-1 * * * * /mnt/knepp_extra/record-stream-water.sh
-20 2 * * * /mnt/knepp_extra/knepp-backup.sh
+* * * * * /mnt/knepp_extra/record-stream-air.sh
+* * * * * /mnt/knepp_extra/record-stream-water.sh
+20 2 * * * /mnt/knepp_extra/lab-backup.sh
 ```
