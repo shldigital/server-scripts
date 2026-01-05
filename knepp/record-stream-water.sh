@@ -1,11 +1,11 @@
 #designed to run every hour to create hourly snapshots of an mp3 stream. eg at one minute past the hour with cron "1 * * * *"
 
+DIR=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+cd "$DIR"
+
 URL=http://locus.creacast.com:9001/knepp_water.mp3
 
-DIR=/home/u294757808/domains/peru-echidna-597998.hostingersite.com/public_html/knepp
 REC=recordings/water
-
-cd $DIR
 
 $DIR/stop-water.sh
 
